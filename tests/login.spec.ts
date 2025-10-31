@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/login.page';
-import { DashboardPage } from '../pages/dashboard.page'; // Precisamos disto aqui agora
+import { DashboardPage } from '../pages/dashboard.page';
+import { LoginPage } from '../pages/login/login.page';
 
 test.describe('Autenticação (HU 2.1)', () => {
 
