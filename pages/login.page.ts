@@ -14,11 +14,9 @@ export class LoginPage {
     this.passwordInput = page.locator('#password');
     this.loginButton = page.getByRole('button', { name: 'Login' });
 
-    // NOVO: Seletor para a mensagem de erro
+    // Seletor para a mensagem de erro
     this.invalidLoginError = page.getByText('Email ou senha inválidos.');
   }
-
-  // 3. Métodos de Ação (Abstrai a interação)
 
   async goto() {
     await this.page.goto('https://app.development.teai.com.br/auth/login');
