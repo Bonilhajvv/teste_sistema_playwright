@@ -1,6 +1,6 @@
 export interface GuardianData {
   name: string;
-  kinship: string; // Ex: 'Mother'
+  kinship: string;
   phone: string;
 }
 
